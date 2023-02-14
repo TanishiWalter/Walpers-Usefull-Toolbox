@@ -1,0 +1,8 @@
+Error codes:
+
+0 in start of number means that the bug is not known about, report to Walper please.
+1 in start pf number means that the bug is known about, don't report pls.
+
+0 in second place of number means that the bug is caused by variable being weird.
+1 in second place of number means that the bug is caused by function being weird.
+3 in second place of number means that the bug is unfixable. This will most likely come with 1 in the first place.
