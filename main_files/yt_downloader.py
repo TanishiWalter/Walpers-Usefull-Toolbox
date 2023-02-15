@@ -2,6 +2,17 @@ from pytube import YouTube
 from colorama import Fore as color
 import os
 
+def downloadYouTubeVid(link):
+    youtubeObject = YouTube(link)
+    youtubeObject = youtubeObject.streams.get_highest_resolution()
+    try:
+        youtubeObject.download()
+    except:
+        print(color.RED + "There is a problem with downloading YT vid, please check your internet connection.")
+        print("Prehaps, it may be caused by the link, if you are connected to the internet, check that too please.")
+        print(color.RESET)
+
+#This part of script is going to be in every script in this toolbox
 try:
     import system #The "system" is script that contains all the useful function as printing logo, that I would have to copy manualy
 except Exception as e:
@@ -30,16 +41,7 @@ def error01(function):
             else:
                 print("Ok, the logo printing part will be skipped.")
 
-def downloadYouTubeVid(link):
-    youtubeObject = YouTube(link)
-    youtubeObject = youtubeObject.streams.get_highest_resolution()
-    try:
-        youtubeObject.download()
-    except:
-        print(color.RED + "There is a problem with downloading YT vid, please check your internet connection.")
-        print("Prehaps, it may be caused by the link, if you are connected to the internet, check that too please.")
-        print(color.RESET)
-
+#This is no longer part that will be in every script
 if __name__ == "__main__":
 
     try:
