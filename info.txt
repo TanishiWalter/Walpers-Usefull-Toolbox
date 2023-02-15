@@ -1,3 +1,12 @@
+General Info:
+
+Every single script except system.py and main.py can be run just by itself, you might get something like:
+
+"This might be error, but it also might mean that system file is not in the same folder as this script.
+Read info.txt for more info."
+
+But the script itself will still work, don't worry.
+
 Error codes:
 
 0 in start of number means that the bug is not known about, report to Walper please.
