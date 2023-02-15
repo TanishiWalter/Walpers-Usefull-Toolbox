@@ -15,5 +15,6 @@ Error codes:
 0 in second place of number means that the bug is caused by variable being weird.
 1 in second place of number means that the bug is caused by function being weird.
 3 in second place of number means that the bug is unfixable. This will most likely come with 1 in the first place.
+4 in second place of number means that the bug is from importing a python package.
 
 Made by Walper
