@@ -17,4 +17,15 @@ Error codes:
 3 in second place of number means that the bug is unfixable. This will most likely come with 1 in the first place.
 4 in second place of number means that the bug is from importing a python package.
 
+Changelog:
+
+Current version: 0.0.02 <br>
+
+Version 0.0.02 (15/2/2023): <br>
+-added yt_downloader.py<br>
+-updated README.md <br>
+-updated info.txt<br>
+-added setup scripts<br>
+-updated rename_all_files.py <br>
+
 Made by Walper
