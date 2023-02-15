@@ -51,4 +51,4 @@ if __name__ == "__main__":
     
     print("Please, input link of video that you want dto download.")
     link = input(color.GREEN + "> ")
-    downloadYouTubeVid("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    downloadYouTubeVid(link)
