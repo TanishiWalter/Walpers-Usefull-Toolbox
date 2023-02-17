@@ -37,7 +37,7 @@ except Exception as e:
     print(e)
     systemImported = False
 
-def error01(function):
+def error01(function): #This function handles errors 01 (read info.txt/RADME.md for more info)
     if systemImported == True:
             print(color.RED + "Error, the " + function + " function in system import is broken/missing.")
             print(color.RED + "Check if the system file is here? Y/N")
@@ -59,11 +59,12 @@ def error01(function):
 if __name__ == "__main__":
     try:
         system.printLogo()
+        for i in range(7):
+            print("\n")
     except:
         error01("printLogo")
 
-    for i in range(7):
-        print("\n")
+    
 
     print(color.GREEN + "This is script to rename all files in one folder.")
     print(color.GREEN + "It will rename file in alphabet order, starting with prefix of your choosing, and then number")

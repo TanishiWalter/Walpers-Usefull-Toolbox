@@ -1,17 +1,32 @@
-from pytube import YouTube
-from colorama import Fore as color
+#This is script to combine 2 PDFs into one
 import os
+import PyPDF2
+from colorama import Fore as color
 
-def downloadYouTubeVid(link):
-    youtubeObject = YouTube(link)
-    youtubeObject = youtubeObject.streams.get_highest_resolution()
-    try:
-        youtubeObject.download()
-    except:
-        print(color.RED + "There is a problem with downloading YT vid, please check your internet connection.")
-        print("Prehaps, it may be caused by the link, if you are connected to the internet, check that too please.")
-        print(color.RESET)
+def combineTwoPdfs(path1,path2):
+    pdf1 = open(path1,"rb")
+    pdfReader1 = PyPDF2.PdfFileReader(pdf1)
 
+    pdf2 = open(path2,"rb")
+    pdfReader2 = PyPDF2.PdfFileReader(pdf2)
+
+    pdfWriter = PyPDF2.PdfFileWriter()
+
+    for page_num in range(pdfReader1.numPages):
+        page = pdfReader1.getPage(page_num)
+        pdfWriter.addPage(page)
+    
+    for page_num in range(pdfReader2.numPages):
+        page = pdfReader2.getPage(page_num)
+        pdfWriter.addPage(page)
+
+    pdfOutput = open('combined.pdf', 'wb')
+    pdfWriter.write(pdfOutput)
+
+    pdfOutput.close()
+    pdf1.close()
+    pdf2.close()
+        
 #This part of script is going to be in every script in this toolbox
 try:
     import system #The "system" is script that contains all the useful function as printing logo, that I would have to copy manualy
@@ -43,14 +58,24 @@ def error01(function): #This function handles errors 01 (read info.txt/RADME.md 
 
 #This is no longer part that will be in every script
 if __name__ == "__main__":
-
     try:
         system.printLogo()
         for i in range(7):
             print("\n")
     except:
         error01("printLogo")
+
+    print(color.GREEN + "This is Python script that combines two PDFs into one.")
+    print("Please, tipe in first path of your PDFs:")
+    path1 = input("> ")
+    print("Now input the other path: ")
+    path2 = input("> ")
+    print(color.RESET)
+
+    combineTwoPdfs(path1,path2)
+
+
+
     
-    print("Please, input link of video that you want dto download.")
-    link = input(color.GREEN + "> ")
-    downloadYouTubeVid(link)
+
+    

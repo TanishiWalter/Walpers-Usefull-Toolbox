@@ -18,14 +18,17 @@ Error codes:
 4 in second place of number means that the bug is from importing a python package.
 
 Changelog:
+Version 0.0.03 (17/2/2023)
 
-Current version: 0.0.02 <br>
+-added new comments to rename_all_files.py and yt_downloader.py
+-fixed info.txt and README.md
+-added Discord server link in info.txt and README.MD
 
-Version 0.0.02 (15/2/2023): <br>
--added yt_downloader.py<br>
--updated README.md <br>
--updated info.txt<br>
--added setup scripts<br>
--updated rename_all_files.py <br>
+Version 0.0.02 (15/2/2023): 
+-added yt_downloader.py
+-updated README.md 
+-updated info.txt
+-added setup scripts
+-updated rename_all_files.py 
 
 Made by Walper
