@@ -23,6 +23,8 @@ Version 0.0.03 (17/2/2023)
 -added new comments to rename_all_files.py and yt_downloader.py
 -fixed info.txt and README.md
 -added Discord server link in info.txt and README.MD
+-fixed setup.sh and setup.bat
+-delated test.py
 
 Version 0.0.02 (15/2/2023): 
 -added yt_downloader.py

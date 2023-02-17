@@ -36,6 +36,7 @@ Version 0.0.03 (17/2/2023)
 -fixed info.txt and README.md<br>
 -added Discord server link in info.txt and README.MD<br>
 -fixed setup.sh and setup.bat <br>
+-delated test.py<br>
 
 Version 0.0.02 (15/2/2023): <br>
 -added yt_downloader.py<br>
