@@ -3,7 +3,7 @@
 ## Walper's Usefull Toolbox
 
 <div align="center">
-  <a href="https://discord.gg/kQ6XQx25bp">__Official Discord__</a>
+  <a href="https://discord.gg/kQ6XQx25bp">Official Discord</a>
 </div>
 
 ### General Info
