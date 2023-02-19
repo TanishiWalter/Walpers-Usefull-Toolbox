@@ -25,10 +25,8 @@ Features: <br>
 I am trying to use very small amount of not pre-installed packages, but when creating <br>
 something like YouTube video downloader, I have to use them. This is list of not-pre installed packages used in this script. <br>
 
-´´´
 pytube <br>
 PyPDF2 <br>
-´´´
 
 There will be a setup script writen in bash/.bat to install them automaticly. <br>
 
