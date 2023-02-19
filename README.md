@@ -18,18 +18,25 @@ Features: <br>
 -script to rename all files in one folder to number + prefix you choose (this can be blank) <br>
 -YouTube downloader <br>
 -PDF combine script (might not work)<br>
+-script to change all file types into other file types in one folder<br>
 
 #### Python Imports
 
 I am trying to use very small amount of not pre-installed packages, but when creating <br>
 something like YouTube video downloader, I have to use them. This is list of not-pre installed packages used in this script. <br>
 
+´´´
 pytube <br>
 PyPDF2 <br>
+´´´
 
 There will be a setup script writen in bash/.bat to install them automaticly. <br>
 
 #### Changelog
+Version 0.0.04 (19/2/2023)<br>
+
+-added change_type.py<br>
+
 Version 0.0.03 (17/2/2023)
 
 -added new comments to rename_all_files.py and yt_downloader.py<br>
@@ -39,6 +46,7 @@ Version 0.0.03 (17/2/2023)
 -delated test.py<br>
 
 Version 0.0.02 (15/2/2023): <br>
+
 -added yt_downloader.py<br>
 -updated README.md <br>
 -updated info.txt<br>

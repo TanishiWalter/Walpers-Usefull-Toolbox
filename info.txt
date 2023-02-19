@@ -18,6 +18,10 @@ Error codes:
 4 in second place of number means that the bug is from importing a python package.
 
 Changelog:
+Version 0.0.04 (19/2/2023)
+
+-added change_type.py
+
 Version 0.0.03 (17/2/2023)
 
 -added new comments to rename_all_files.py and yt_downloader.py

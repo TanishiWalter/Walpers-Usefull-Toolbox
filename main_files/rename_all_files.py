@@ -26,6 +26,21 @@ def renameAllFiles(prefix,path,num):
         os.rename(oldName,newName)
         startFromNum += 1
 
+    def changeFileType(path,type1,type2):
+        if path == "null":
+            path = os.getcwd()
+
+        fileList = os.listdir(str(path))
+        changeList = []
+
+        for i in filesList:
+            if i.split(".")[len(i.split(".")) - 1] == type1:
+                changeList.append(i)
+        
+        for i in changeFileType:
+            newType = i.split(".")[len(i.split(".")) - 1] == type2
+            os.rename(i,newType)
+
 #This part of script is going to be in every script in this toolbox
 try:
     import system #The "system" is script that contains all the useful function as printing logo, that I would have to copy manualy
@@ -63,9 +78,7 @@ if __name__ == "__main__":
             print("\n")
     except:
         error01("printLogo")
-
-    
-
+        
     print(color.GREEN + "This is script to rename all files in one folder.")
     print(color.GREEN + "It will rename file in alphabet order, starting with prefix of your choosing, and then number")
     print(color.GREEN + "Please, enter the prefix (null for blank):")
