@@ -14,7 +14,6 @@ or in official Discord server (not done yet). <br>
 
 #### Features
 
-Features: <br>
 -script to rename all files in one folder to number + prefix you choose (this can be blank) <br>
 -YouTube downloader <br>
 -PDF combine script (might not work)<br>
