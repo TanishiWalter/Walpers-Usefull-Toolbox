@@ -15,7 +15,7 @@ or in official Discord server (not done yet). <br>
 #### Features
 
 -script to rename all files in one folder to number + prefix you choose (this can be blank) <br>
--YouTube downloader <br>
+-YouTube downloader (this is in main_with_gui.py)<br>
 -PDF combine script (might not work)<br>
 -script to change all file types into other file types in one folder<br>
 
@@ -26,10 +26,16 @@ something like YouTube video downloader, I have to use them. This is list of not
 
 pytube <br>
 PyPDF2 <br>
+customtkinter <br>
 
 There will be a setup script writen in bash/.bat to install them automaticly. <br>
 
 #### Changelog
+
+Version 0.0.05 (12/3/2023)
+
+-added main_with_gui.py
+
 Version 0.0.04 (19/2/2023)<br>
 
 -added change_type.py<br>

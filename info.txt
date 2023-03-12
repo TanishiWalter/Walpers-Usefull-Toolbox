@@ -1,23 +1,11 @@
 General Info:
 
-Every single script except system.py and main.py can be run just by itself, you might get something like:
-
-"This might be error, but it also might mean that system file is not in the same folder as this script.
-Read info.txt for more info."
-
-But the script itself will still work, don't worry.
-
-Error codes:
-
-0 in start of number means that the bug is not known about, report to Walper please.
-1 in start pf number means that the bug is known about, don't report pls.
-
-0 in second place of number means that the bug is caused by variable being weird.
-1 in second place of number means that the bug is caused by function being weird.
-3 in second place of number means that the bug is unfixable. This will most likely come with 1 in the first place.
-4 in second place of number means that the bug is from importing a python package.
-
 Changelog:
+
+Version 0.0.05 (12/3/2023)
+
+-added main_with_gui.py
+
 Version 0.0.04 (19/2/2023)
 
 -added change_type.py

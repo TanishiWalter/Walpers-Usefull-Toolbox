@@ -4,14 +4,19 @@ import os
 
 def downloadYouTubeVid(link):
     youtubeObject = YouTube(link)
-    youtubeObject = youtubeObject.streams.get_highest_resolution()
     try:
-        youtubeObject.download()
+        if not youtubeObject.video_id:
+            return("Error, there is problem with URL.")
+        else:
+            youtubeObject = youtubeObject.streams.get_highest_resolution()
+            try:
+                youtubeObject.download()
+                return("Video downloaded")
+            except:
+                return("Unexpected error")
     except:
-        print(color.RED + "There is a problem with downloading YT vid, please check your internet connection.")
-        print("Prehaps, it may be caused by the link, if you are connected to the internet, check that too please.")
-        print(color.RESET)
-
+        return("Unexpected error")
+    
 #This part of script is going to be in every script in this toolbox
 try:
     import system #The "system" is script that contains all the useful function as printing logo, that I would have to copy manualy
