@@ -28,7 +28,7 @@ pytube <br>
 PyPDF2 <br>
 customtkinter <br>
 
-There will be a setup script writen in bash/.bat to install them automaticly. <br>
+There is a requirements.txt file for installing these packages. To use it run "pip install -r requirements.txt" <br>
 
 #### Changelog
 

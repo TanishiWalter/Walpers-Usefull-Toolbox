@@ -1,0 +1,3 @@
+pytube
+PyPDF2
+customtkinter
